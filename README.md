@@ -29,3 +29,5 @@ TODO:
 `./app/routes.js`
 
 1. Setup additional routes 
+
+Before Running the server please run `npm install` in the root directory.
