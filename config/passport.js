@@ -1,7 +1,7 @@
 // =============================================================================
 // Load the Strategies and other resources =====================================
 // =============================================================================
-  /* TODO: Load passport stratagies here */
+  /* TODO: Load passport strategies here */
 
 module.exports = function(passport) {
 
