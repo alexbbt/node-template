@@ -30,8 +30,8 @@ TODO:
 
 1. Setup additional routes 
 
-Before Running the server please run `npm install` in the root directory.
+Before Running the server please run `$ npm install` in the root directory.
 
 When adding a new module remember to add it to the dependency list
 
-	example: `npm install mysql --save`
+example: `$ npm install mysql --save`
