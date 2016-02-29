@@ -13,39 +13,39 @@
 // =============================================================================
 // Set up ======================================================================
 // =============================================================================
-	var express    = require('express');
-	var bodyParser = require('body-parser');
-	var passport   = require('passport');
-	var app        = express();
-	var port       = process.env.PORT || 8080;	
+  var express    = require('express');
+  var bodyParser = require('body-parser');
+  var passport   = require('passport');
+  var app        = express();
+  var port       = process.env.PORT || 8080;  
 
 // =============================================================================
 // Configuration ===============================================================
 // =============================================================================
-	var database = require('./app/database.js');
+  var database = require('./app/database.js');
 
-	require('./config/passport')(passport);     // pass passport for configuration
+  require('./config/passport')(passport);     // pass passport for configuration
 
 // =============================================================================
 // Set the view engine to ejs ==================================================
 // =============================================================================
-	app.set('view engine', 'ejs');
+  app.set('view engine', 'ejs');
 
-	app.use(express.static(__dirname + '/assets'));     // Static css and JS files
-	app.use( bodyParser.json() );                // to support JSON-encoded bodies
-	app.use( bodyParser.urlencoded({              // to support URL-encoded bodies
-	  extended: true
-	})); 
-	app.use(passport.initialize());
+  app.use(express.static(__dirname + '/assets'));     // Static css and JS files
+  app.use( bodyParser.json() );                // to support JSON-encoded bodies
+  app.use( bodyParser.urlencoded({              // to support URL-encoded bodies
+    extended: true
+  })); 
+  app.use(passport.initialize());
 
 // =============================================================================
 // Routes ======================================================================
 // =============================================================================
-	require('./app/routes.js')(app, database, passport); 
+  require('./app/routes.js')(app, database, passport); 
 
 
 // =============================================================================
 // Launch ======================================================================
 // =============================================================================
-	app.listen(port);
-	console.log('The magic happens on port ' + port);
+  app.listen(port);
+  console.log('The magic happens on port ' + port);
