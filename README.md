@@ -9,15 +9,19 @@ Just download the **[zip file](https://github.com/alexbbt/node-template/archive/
 All I ask is that you give me credit for the template in your final code.
 
 TODO:
+
 `./config/config.js`
-	1. Specify Database Config 
+1. Specify Database Config 
+
 `./app/database.js`
-	1. Load all Database Modules 
-	2. Connect to Database and Check for errors 
-	3. Setup 'public' database functions 
-	4. Setup 'private' database functions 
+1. Load all Database Modules 
+2. Connect to Database and Check for errors 
+3. Setup 'public' database functions 
+4. Setup 'private' database functions 
+
 `./config/passport.js`
-	1. Load passport strategies 
-	2. Start stratagies
+1. Load passport strategies 
+2. Start stratagies
+
 `./app/routes.js`
-	1. Setup additional routes 
+1. Setup additional routes 
