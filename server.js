@@ -31,7 +31,7 @@
 // =============================================================================
   app.set('view engine', 'ejs');
 
-  app.use(express.static(__dirname + '/assets'));     // Static css and JS files
+  app.use(express.static(__dirname + '/static'));     // Static css and JS files
   app.use( bodyParser.json() );                // to support JSON-encoded bodies
   app.use( bodyParser.urlencoded({              // to support URL-encoded bodies
     extended: true
