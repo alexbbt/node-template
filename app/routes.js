@@ -7,7 +7,9 @@ module.exports = function(app, database, passport) {
   // Index page ================================================================
   // ===========================================================================
     app.get('/', function(req, res) {
-      res.render('pages/index', {});
+      res.render('pages/index', {
+        title: 'Sample Page'
+      });
     });
 
     /* TODO: Setup additional routes */
